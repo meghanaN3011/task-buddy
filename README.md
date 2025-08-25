@@ -45,6 +45,8 @@ The app will run locally at 👉 http://localhost:3000
 
 ## 📸Screenshots
 
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/c069d3b2-aadc-4f14-9952-109cdad2fa8e" />
+
 
 ## 🤝Contributing
 
@@ -59,3 +61,4 @@ Author: Meghana N
 🔗 LinkedIn: https://www.linkedin.com/in/meghana-n3011/
 
 💻 GitHub: https://github.com/meghanaN3011
+
