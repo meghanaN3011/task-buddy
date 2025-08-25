@@ -1,13 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function AddTask({ addTask }) {
+function AddTask({ addTask, editingTask }) {
   const [input, setInput] = useState("");
+
+  
+  useEffect(() => {
+    if (editingTask) {
+      setInput(editingTask.name);
+    }
+  }, [editingTask]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (input.trim() === "") return;
-    addTask(input);
-    setInput("");
+    addTask(input);   
+    setInput("");    
   };
 
   return (
@@ -26,7 +33,7 @@ function AddTask({ addTask }) {
         type="submit"
         className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-2xl shadow-md hover:bg-blue-600 hover:scale-105 transition"
       >
-        Add Task
+        {editingTask ? "Update Task" : "Add Task"}
       </button>
     </form>
   );

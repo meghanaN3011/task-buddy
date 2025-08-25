@@ -76,6 +76,7 @@ body {
 .orange { background: #efac38; }
 .green { background: #58de89; }
 .red { background: #dc4e4e; }
+.grey { background: rgb(149, 149, 149); margin-left: 15px;}
 
 .empty-msg {
   text-align: center;
